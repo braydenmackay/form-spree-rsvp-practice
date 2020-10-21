@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Fun</title>
+  </head>
+  <body>
+    <h1>Are you coming to Salt Lake?</h1>
+
+    <form
+      id="fs-frm"
+      name="basic-rsvp-form"
+      accept-charset="utf-8"
+      action="https://formspree.io/f/moqpddvv"
+      method="post"
+    >
+      <fieldset id="fs-frm-inputs">
+        <label for="full-name">Full Name</label>
+        <input
+          type="text"
+          name="name"
+          id="full-name"
+          placeholder="First and Last"
+          required=""
+        />
+        <label for="attending">Will you Attend?</label>
+        <select name="attending" id="attending" required="">
+          <option>Select</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+        <label for="date">If yes, when?</label>
+        <input type="date" name="date" id="date" placeholder="Date" />
+        <input type="hidden" name="_subject" id="email-subject" value="RSVP" />
+      </fieldset>
+      <input type="submit" value="RSVP" />
+    </form>
+  </body>
+</html>
